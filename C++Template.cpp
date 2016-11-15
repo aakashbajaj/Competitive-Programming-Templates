@@ -1,3 +1,8 @@
+//				C++ Template For Competitive Programming				// 
+//							By Aakash Bajaj								//
+//				Birla Institute Of Technology And Science				//
+//								Pilani									//
+
 #include <cstdio>
 #include <cmath>
 #include <iostream>
