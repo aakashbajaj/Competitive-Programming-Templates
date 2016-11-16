@@ -41,6 +41,16 @@ inline void scn(int &a)
   }
 }
 
+template<typename T> T gcd(T a, T b)
+{
+	return b ? a : gcd(b, a%b); 
+}
+
+template<typename T> T lcm(T a, T b)
+{
+	return (a*b/gcd(a,b));
+}
+
 int main()
 {
 	int t;
