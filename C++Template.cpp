@@ -6,10 +6,10 @@ using namespace std;
 #define sll(x) LL x = scanLong();
 #define sci(x) int x; scanf("%d",&x);
 #define scll(x) LL x; scanf("%lld", &x);
-#define pi(x) printf("%d\n", x);
-#define pll(x) printf("%lld\n", x);
-#define ps(x) printf("%s\n", x);
-#define nl printf("\n");
+#define pi(x) printf("%d\n", x)
+#define pll(x) printf("%lld\n", x)
+#define ps(x) printf("%s\n", x)
+#define nl printf("\n")
 #define clr(a) memset(a,0, sizeof(a))
 
 typedef long int LI;
@@ -52,9 +52,5 @@ inline LL scanLong() {
 }
 
 int main() {
-	#ifndef ONLINE_JUDGE
-		freopen("inp.txt","r", stdin);
-	#endif
 
-	
 }
