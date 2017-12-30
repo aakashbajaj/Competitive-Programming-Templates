@@ -1,65 +1,60 @@
-//				C++ Template For Competitive Programming				// 
-//					    By Aakash Bajaj						//
-//				Birla Institute Of Technology And Science				//
-//						Pilani							//
+#include <bits/stdc++.h>
 
-#include <cstdio>
-#include <cmath>
-#include <iostream>
-#include <set>
-#include <algorithm>
-#include <vector>
-#include <map>
-#include <cassert>
-#include <string>
-#include <cstring>
-#include <queue>
-#include <limits.h>
-#include <string.h>
-#include <set>
-#include <queue>
- 
 using namespace std;
- 
-#define rep(i,a,b)  for(int i=a; a<b; i++)
-#define strlp(s,i,a)	for(int i=a;s[i]!='\0';i++)
-#define all(v)  v.begin(),v.end()
- 
+
+#define si(x) int x = scanInt();
+#define sll(x) LL x = scanLong();
+#define sci(x) int x; scanf("%d",&x);
+#define scll(x) LL x; scanf("%lld", &x);
+#define pi(x) printf("%d\n", x);
+#define pll(x) printf("%lld\n", x);
+#define ps(x) printf("%s\n", x);
+#define nl printf("\n");
+#define clr(a) memset(a,0, sizeof(a))
+
+typedef long int LI;
 typedef long long int LL;
-typedef pair<int, int > pii;
-typedef vector<int > vi;
- 
-inline void scn(int &a)
-{
-  char k = 0;
-  while(k<33)
- 
-  k=getc(stdin);
-  a=0;
-  while(k>33)
-  {
-    a = a*10 + k - '0';
-    k = getc(stdin);
-  }
-}
+typedef long double LD;
+typedef vector<int> VI;
+typedef vector<LL> VLL;
+typedef pair<int, int> PII;
+typedef pair<LL, LL> PLL;
+LL mod = 1e9+7;
 
-template<typename T> T gcd(T a, T b)
-{
-	return b ? a : gcd(b, a%b); 
-}
-
-template<typename T> T lcm(T a, T b)
-{
-	return (a*b/gcd(a,b));
-}
-
-int main()
-{
-	int t;
-	scn(t);
-	while(t--)
-	{
-
+inline int scanInt() {
+	int n = 0;
+	char ch = getchar_unlocked();
+	int sign = 1;
+	while(ch < '0' || ch > '9') {
+		if(ch == '-')	sign = -1;
+		ch = getchar_unlocked();
 	}
-	return 0;
+	while(ch >= '0' && ch <= '9') {
+		n = (n<<1)+(n<<3)+(int)(ch-'0');
+		ch = getchar_unlocked();
+	}
+	return n*sign;
+}
+
+inline LL scanLong() {
+	LL n = 0;
+	char ch = getchar_unlocked();
+	LL sign = 1;
+	while(ch < '0' || ch > '9') {
+		if(ch == '-')	sign = -1;
+		ch = getchar_unlocked();
+	}
+	while(ch >= '0' && ch <= '9') {
+		n = (n<<1)+(n<<3)+(LL)(ch-'0');
+		ch = getchar_unlocked();
+	}
+	return n*sign;
+}
+
+int main() {
+	#ifndef ONLINE_JUDGE
+		freopen("inp.txt","r", stdin);
+	#endif
+
+	
 }
