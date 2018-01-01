@@ -19,7 +19,9 @@ typedef vector<int> VI;
 typedef vector<LL> VLL;
 typedef pair<int, int> PII;
 typedef pair<LL, LL> PLL;
+
 LL mod = 1e9+7;
+const int MAX = 1e5+5;
 
 inline int scanInt() {
 	int n = 0;
