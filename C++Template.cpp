@@ -25,30 +25,30 @@ const int MAX = 1e5+5;
 
 inline int scanInt() {
 	int n = 0;
-	char ch = getchar_unlocked();
+	char ch = getchar();
 	int sign = 1;
 	while(ch < '0' || ch > '9') {
 		if(ch == '-')	sign = -1;
-		ch = getchar_unlocked();
+		ch = getchar();
 	}
 	while(ch >= '0' && ch <= '9') {
 		n = (n<<1)+(n<<3)+(int)(ch-'0');
-		ch = getchar_unlocked();
+		ch = getchar();
 	}
 	return n*sign;
 }
 
 inline LL scanLong() {
 	LL n = 0;
-	char ch = getchar_unlocked();
+	char ch = getchar();
 	LL sign = 1;
 	while(ch < '0' || ch > '9') {
 		if(ch == '-')	sign = -1;
-		ch = getchar_unlocked();
+		ch = getchar();
 	}
 	while(ch >= '0' && ch <= '9') {
 		n = (n<<1)+(n<<3)+(LL)(ch-'0');
-		ch = getchar_unlocked();
+		ch = getchar();
 	}
 	return n*sign;
 }
